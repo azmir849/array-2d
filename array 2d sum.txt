@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main ()
+{
+    int i,j,sub[2][3],sum = 0;
+    printf("Please Enter 6 Numbers please : \n");
+    for(i=0; i<2; i++)
+    {
+        for(j=0; j<3; j++)
+        {
+            scanf("%d",&sub[i][j]);
+        }
+    }
+    printf("Numbers Are : \n");
+    for(i=0; i<2; i++)
+    {
+        for(j=0; j<3; j++)
+        {
+            printf("%d\n",sub[i][j]);
+            sum = sum + sub[i][j];
+        }
+
+        printf("The Sum of The Number is : %d\n",sum);
+        sum = 0;
+    }
+    return 0;
+}
